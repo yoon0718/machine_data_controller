@@ -1,0 +1,30 @@
+설비 JSON파일 전송 프로그램
+
+기능
+- ( O ) pc off/on 시 자동실행 (작업스케줄러 자동 등록)
+- ( O ) 프로그램 켜지면 폴더 감시 자동실행(위치는 config.ini 참조) 
+- ( O ) INI파일 읽어서 서버PC IP/PORT read 
+- ( O ) INI파일 읽어서 실시간 감시 폴더 파악 
+- ( O ) INI파일 읽어서 관리자 ID/PW 파악 
+- ( O ) 실시간 서버 접속 상태 확인 
+- ( O ) 폴더 내 JSON 파일 감지 
+- ( O ) 감지된 JSON 파일 서버 전송 
+- ( O ) 감시폴더 없으면 자동 생성 
+- ( O ) 최소화버튼 클릭 시 숨겨진 아이콘 이동 
+- ( O ) 관리자외 프로그램 종료 불가(종료는 숨겨진아이콘에서 마우스 왼쪽클릭시 가능) 
+
+INI 파일 참조
+
+[SERVER]
+SERVER_IP => 서버 POST맵핑 주소
+
+[USER]
+ID => 관리자 ID
+PASSWORD => 관리자 PASSWORD
+
+[WATCH_FOLDER]
+FOLDER_SELECTED => 감지 대상 폴더 위치
+
+[RETRY]
+SEND_LIMIT => 파일 보내기 실패시 재시도 횟수
+LINK_LIMIT => 서버연결 불가일때 폴더 감시 시작 시 서버연결시도 횟수
