@@ -1,3 +1,5 @@
+Clinet : Python / Server : Java(Spring) / Database : Mysql, Oracle
+
 간편 구조도
 1. 설비
 실시간 데이터 전송
