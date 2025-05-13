@@ -1,3 +1,7 @@
+Client : Python
+Server : Java
+database : Mysql, Oracle
+
 간편 구조도
 1. 설비
 실시간 데이터 전송
